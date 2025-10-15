@@ -37,7 +37,7 @@ export default function TopNavbar() {
                 className='shrink-0 select-none hover:opacity-90 transition-opacity'
               >
                 <span className='text-lg font-extrabold tracking-tight neon-text'>
-                  {siteName || 'DecoTV'}
+                  {siteName || '简单影视'}
                 </span>
               </Link>
             </div>
