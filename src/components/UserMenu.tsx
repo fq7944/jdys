@@ -407,24 +407,7 @@ export const UserMenu: React.FC = () => {
     }
   };
 
-  // 获取感谢信息
-  const getThanksInfo = (dataSource: string) => {
-    switch (dataSource) {
-      case 'cors-proxy-zwei':
-        return {
-          text: 'Thanks to @Zwei',
-          url: 'https://github.com/bestzwei',
-        };
-      case 'cmliussss-cdn-tencent':
-      case 'cmliussss-cdn-ali':
-        return {
-          text: 'Thanks to @CMLiussss',
-          url: 'https://github.com/cmliu',
-        };
-      default:
-        return null;
-    }
-  };
+
 
   const handleResetSettings = () => {
     const defaultDoubanProxyType =
@@ -719,27 +702,7 @@ export const UserMenu: React.FC = () => {
                 )}
               </div>
 
-              {/* 感谢信息 */}
-              {getThanksInfo(doubanDataSource) && (
-                <div className='mt-3'>
-                  <button
-                    type='button'
-                    onClick={() =>
-                      window.open(
-                        getThanksInfo(doubanDataSource)!.url,
-                        '_blank'
-                      )
-                    }
-                    className='flex items-center justify-center gap-1.5 w-full px-3 text-xs text-gray-500 dark:text-gray-400 cursor-pointer'
-                  >
-                    <span className='font-medium'>
-                      {getThanksInfo(doubanDataSource)!.text}
-                    </span>
-                    <ExternalLink className='w-3.5 opacity-70' />
-                  </button>
-                </div>
-              )}
-            </div>
+
 
             {/* 豆瓣代理地址设置 - 仅在选择自定义代理时显示 */}
             {doubanDataSource === 'custom' && (
@@ -829,27 +792,7 @@ export const UserMenu: React.FC = () => {
                 )}
               </div>
 
-              {/* 感谢信息 */}
-              {getThanksInfo(doubanImageProxyType) && (
-                <div className='mt-3'>
-                  <button
-                    type='button'
-                    onClick={() =>
-                      window.open(
-                        getThanksInfo(doubanImageProxyType)!.url,
-                        '_blank'
-                      )
-                    }
-                    className='flex items-center justify-center gap-1.5 w-full px-3 text-xs text-gray-500 dark:text-gray-400 cursor-pointer'
-                  >
-                    <span className='font-medium'>
-                      {getThanksInfo(doubanImageProxyType)!.text}
-                    </span>
-                    <ExternalLink className='w-3.5 opacity-70' />
-                  </button>
-                </div>
-              )}
-            </div>
+
 
             {/* 豆瓣图片代理地址设置 - 仅在选择自定义代理时显示 */}
             {doubanImageProxyType === 'custom' && (
