@@ -469,8 +469,7 @@ function HomeClient() {
             </>
           )}
 
-         // {/* DecoTV 底部炫酷卡片 */}
-         // <DecoTVFooterCard />
+
         </div>
       </div>
       {announcement && showAnnouncement && (
