@@ -177,10 +177,10 @@ function HomeClient() {
             <div className='mx-auto w-full px-4'>
               <div className='inline-block rounded-3xl px-6 py-4 glass-card'>
                 <div className='text-4xl sm:text-6xl font-extrabold tracking-tight neon-text'>
-                  DecoTV
+                  简单影视
                 </div>
                 <div className='mt-2 text-sm sm:text-base text-gray-600 dark:text-gray-300'>
-                  发现、收藏、继续观看
+                  极致影视体验，尽在简单影视
                 </div>
               </div>
             </div>
